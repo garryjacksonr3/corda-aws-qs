@@ -9,12 +9,12 @@ tests:
   default:
     template: ./templates/master.template.yaml
     regions:
-    - us-west-2
+    - us-east-1
     
     parameters:
       AvailabilityZones: "$[taskcat_getaz_2]"
       EmailAddress: garry.jackson@r3.com
-      KeyPairName: qs-workshop
+      KeyPairName: corda-aws-qs
       WebserverCIDR: "0.0.0.0/0"
       QSS3KeyPrefix: "corda-aws-qs/"
       QSS3BucketRegion: "$[taskcat_current_region]"
