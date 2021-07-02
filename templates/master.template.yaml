@@ -115,10 +115,4 @@ Resources:
         PublicSubnet2CIDR: !Ref PublicSubnet2CIDR
         VPCCIDR: !Ref VPCCIDR
 
-Outputs:
-  WebURL:
-    Description: "The web server URL"
-    Value:
-      Fn::GetAtt:
-      - WorkloadStack
-      - Outputs.URL
+
